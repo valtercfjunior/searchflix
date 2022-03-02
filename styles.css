@@ -1,6 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
 :root {
     --title: #fffcf9;
     --subtitle: #b3b3b3;
     --bg-button: #e9e6e3;
     --background: linear-gradient(43deg, #102d71 0%, #000000 52%, #c12a23 100%);
   }
+
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      color: #e9e6e3;
+      font-family: 'Poppins', sans-serif;
+  }
+
+
+  .container{
+      background-image: var(--background);
+      width: 100vw;
+      height: 100vh;
+
+      padding: 10px;
+      text-align: center;
+      
+  }
+
+
+  header img{
+
+    width: 120px;
+    margin-top: 50px;
+
+  }
+
+  h1{
+      font-weight: 700;
+      font-size: 30pt;
+
+  }
+
+  /* <------- GRID -------> */
+
+
+  .movie-poster{
+      grid-area: poster;
+      width: 400px;
+  }
+  .movie-title{
+      grid-area: title;
+  }
+  .movie-description{
+      grid-area: description;
+      text-align: start;
+  }
+  .movie-genero{
+      grid-area: genero;
+  }
+  .movie-director{
+      grid-area: director;
+  }
+  .movie-duration{
+      grid-area: duration;
+  }
+  .movie-date{
+      grid-area: date;
+  }
+  .movie-actors{
+      grid-area: actors;
+  }
+
+  main{
+
+    width:40vw;
+    gap: 10px;
+    justify-items: start;
+    
+
+    display: grid;
+    
+    margin: 50px auto;
+
+    grid-template-areas: 
+    "poster title title title"
+    "poster description description description"
+    "genero director duration date"
+    "actors actors actors actors"    
+    ;
+
+
+  }
+
+
+  /* <------- END GRID -------> */
+
+
+
+
+  button{
+      width: 200px;
+      height:max-content;
+      border: none;
+      border-radius: 7px;
+      padding: 5px;
+   
+      background-color: var(--bg-button);
+      
+
+      cursor: pointer;      
+      
+
+      font-weight: 700;
+      font-size: 12pt;
+      color: rgb(92, 88, 88);
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      margin: auto;
+
+      
+  }
+
+  button img{
+      padding: 5px;
+      margin-right: 10px;
+            
+  }
+
+/* <-------- HOVER ----------> */
+
+button:hover{
+    color: #c12a23; 
+    background-color: white;
+    transform: scale(1.02);
+}
+
+
+/* <-------- END HOVER ----------> */
+  
+
+/* <------- FOOTER -------> */
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 43%;
+    margin-bottom: 20px;
+}
+
+
+
+/* <------- FOOTER -------> */  
+
