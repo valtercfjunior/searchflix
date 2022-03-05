@@ -70,11 +70,28 @@
       grid-area: actors;
   }
 
+  .movie-genero-p{
+    grid-area: genero-p;
+  }
+  .movie-director-p{
+    grid-area: director-p;
+  }
+  .movie-duration-p{
+    grid-area: duration-p;
+  }
+  .movie-date-p{
+    grid-area: date-p;
+  }
+  .movie-actors-p{
+    grid-area: actors-p;
+  }
+
   main{
 
     width:40vw;
     gap: 10px;
     justify-items: start;
+    
     
 
     display: grid;
@@ -85,7 +102,9 @@
     "poster title title title"
     "poster description description description"
     "genero director duration date"
-    "actors actors actors actors"    
+    "genero-p director-p duration-p date-p" 
+    "actors actors actors actors"
+    "actors-p actors-p actors-p actors-p"    
     ;
 
 
