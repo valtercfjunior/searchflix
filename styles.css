@@ -180,8 +180,11 @@ footer{
 
     main{
       display: block;
-      margin: auto;
+      width:min-content;
+      
+      
     }
+
     
 
 
