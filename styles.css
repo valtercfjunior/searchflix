@@ -15,11 +15,17 @@
       font-family: 'Poppins', sans-serif;
   }
 
+  body, html{
+    height: 100vh;
+  }
 
   .container{
+      
       background-image: var(--background);
+      
       width: 100vw;
       height: 100vh;
+      overflow: scroll;
 
       padding: 10px;
       text-align: center;
@@ -45,7 +51,8 @@
 
   .movie-poster{
       grid-area: poster;
-      width: 400px;
+      width: 300px;
+      
   }
   .movie-title{
       grid-area: title;
@@ -56,43 +63,36 @@
   }
   .movie-genero{
       grid-area: genero;
-  }
-  .movie-director{
-      grid-area: director;
-  }
+      align-self: end;
+      
+  } 
   .movie-duration{
       grid-area: duration;
+      align-self: end;
   }
   .movie-date{
       grid-area: date;
+      align-self: end;
   }
-  .movie-actors{
-      grid-area: actors;
-  }
-
   .movie-genero-p{
     grid-area: genero-p;
-  }
-  .movie-director-p{
-    grid-area: director-p;
+    align-self: start;
   }
   .movie-duration-p{
     grid-area: duration-p;
+    align-self: start;
   }
   .movie-date-p{
     grid-area: date-p;
+    align-self: start;
   }
-  .movie-actors-p{
-    grid-area: actors-p;
-  }
+  
 
   main{
+    
 
     width:40vw;
-    gap: 10px;
-    justify-items: start;
-    
-    
+    gap: 10px;  
 
     display: grid;
     
@@ -101,10 +101,9 @@
     grid-template-areas: 
     "poster title title title"
     "poster description description description"
-    "genero director duration date"
-    "genero-p director-p duration-p date-p" 
-    "actors actors actors actors"
-    "actors-p actors-p actors-p actors-p"    
+    "poster genero duration date"
+    "poster genero-p duration-p date-p" 
+       
     ;
 
 
@@ -112,6 +111,8 @@
 
 
   /* <------- END GRID -------> */
+
+
 
 
 
@@ -162,13 +163,28 @@ button:hover{
 
 /* <------- FOOTER -------> */
 footer{
-    position: absolute;
-    bottom: 0;
-    left: 43%;
-    margin-bottom: 20px;
+
+  margin-top: 100px;
+    
 }
 
 
 
-/* <------- FOOTER -------> */  
+/* <------- END FOOTER -------> */  
 
+
+
+  /* <-------  MEDIA QUERY -------> */
+
+  @media screen and (max-width: 1024px){
+
+    main{
+      display: block;
+      margin: auto;
+    }
+    
+
+
+  }
+
+  /* <------- END MEDIA QUERY -------> */

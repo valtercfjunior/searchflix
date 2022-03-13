@@ -1,0 +1,26 @@
+{
+  "name": "searchflix",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {    
+    "start": "nodemon main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/valtercfjunior/searchflix.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/valtercfjunior/searchflix/issues"
+  },
+  "homepage": "https://github.com/valtercfjunior/searchflix#readme",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "cors": "^2.8.5",
+    "nodemon": "^2.0.15"
+  }
+}
